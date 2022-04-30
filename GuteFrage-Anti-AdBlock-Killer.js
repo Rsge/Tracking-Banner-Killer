@@ -4,7 +4,7 @@
 // @description Entfernt das nervige Adblock-Banner auf GuteFrage.net.
 // @description:en  Removes the annoying adblock-reminder on German site "Gutefrage.net".
 
-// @version      1.1
+// @version      1.2.0
 // @author       Rsge
 // @copyright    2021+, Jan G. (Rsge)
 // @license      Mozilla Public License 2.0
@@ -15,7 +15,7 @@
 // @supportURL   https://github.com/Rsge/GuteFrage-Anti-AdBlock-Killer/issues
 
 
-// @include      https://www.gutefrage.net/*
+// @match        https://www.gutefrage.net/*
 
 // @grant        none
 // ==/UserScript==
