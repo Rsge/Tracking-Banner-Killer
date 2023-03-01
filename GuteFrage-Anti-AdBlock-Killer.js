@@ -4,8 +4,8 @@
 // @description    Entfernt das nervige Adblock-Banner auf GuteFrage.net.
 // @description:en Removes the annoying adblock-reminder on German site "Gutefrage.net".
 
-// @version        1.2.3
-// @copyright      2021+, Jan G. (Rsge)
+// @version        1.2.4
+// @copyright      2023+, Jan G. (Rsge)
 // @license        Mozilla Public License 2.0
 // @icon           https://www.gutefrage.net/nmms-assets/images/immutable/logos/fb_gutefrage.png
 
@@ -22,15 +22,15 @@
 // ==/UserScript==
 
 (function() {
-    'use strict';
-    var node;
-    var observer = new MutationObserver(function(mutations) {
-        mutations.forEach(function(mutation) {
-            node = mutation.addedNodes[0];
-            //console.log(node);
-            if (mutation.addedNodes[0] != null && node.id == "wl-container") {
-                node.remove();
-                console.log(`
+  'use strict';
+  var node;
+  var observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      node = mutation.addedNodes[0];
+      //console.log(node);
+      if (mutation.addedNodes[0] != null && node.id == "wl-container") {
+        node.remove();
+        console.log(`
          ▄              ▄
         ▌▒█           ▄▀▒▌
         ▌▒▒▀▄       ▄▀▒▒▒▐
@@ -50,12 +50,12 @@
     ▀▄▒▒▒▒▒▒▒▒▒▒▄▄▄▀▒▒▒▒▄▀
    ▐▀▒▀▄▄▄▄▄▄▀▀▀▒▒▒▒▒▄▄▀
   ▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀▀    https://github.com/Rsge/GuteFrage-Anti-AdBlock-Killer`);
-            }
-        });
+      }
     });
+  });
 
-    observer.observe(document.documentElement, {
-        childList: true,
-        subtree: true
-    });
+  observer.observe(document.documentElement, {
+    childList: true,
+    subtree: true
+  });
 })();
