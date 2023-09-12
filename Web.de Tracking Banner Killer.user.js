@@ -5,7 +5,7 @@
 // @description    Removes the annoying "privacy settings" banner asking you to accept all tracking, pay, or be bothered constantly.
 // @description:de Entfernt das nervige "Datenschutz"-Banner, welches euch zwingen will, zu bezahlen, jegliches Tracking zu akzeptieren oder ständig genervt zu werden.
 
-// @version        1.0.0
+// @version        1.0.1
 // @copyright      2023+, Jan G. (Rsge)
 // @license        Mozilla Public License 2.0
 // @icon           https://img.ui-portal.de/ux/webde/icons/favicon-32x32.png
@@ -13,6 +13,8 @@
 // @namespace      https://github.com/Rsge
 // @homepageURL    https://github.com/Rsge/Web.de-Tracking-Banner-Killer
 // @supportURL     https://github.com/Rsge/Web.de-Tracking-Banner-Killer/issues
+// @updateURL      https://greasyfork.org/scripts/475107-web-de-tracking-banner-killer/code/Webde%20Tracking%20Banner%20Killer.user.js
+// @downloadURL    https://greasyfork.org/scripts/475107-web-de-tracking-banner-killer/code/Webde%20Tracking%20Banner%20Killer.user.js
 
 // @match          https://bap.navigator.web.de/*
 
