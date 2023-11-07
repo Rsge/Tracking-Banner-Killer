@@ -5,7 +5,7 @@
 // @description    Removes the annoying "privacy settings" banner on German site Web.de's Freemail service asking you to accept all tracking, pay, or be bothered constantly.
 // @description:de Entfernt das nervige "Datenschutz"-Banner in Web.de Freemail, das euch zwingen will, zu bezahlen, jegliches Tracking zu akzeptieren oder ständig genervt zu werden.
 
-// @version        1.1.0
+// @version        1.1.1
 // @copyright      2023+, Jan G. (Rsge)
 // @license        Mozilla Public License 2.0
 // @icon           https://img.ui-portal.de/ux/webde/icons/favicon-32x32.png
@@ -28,7 +28,7 @@
   'use strict';
   let blocked = false;
   let redirect = false;
-  if(document.URL.includes("consent-management")) {
+  if (document.URL.includes("consent-management")) {
     blocked = true;
     redirect = true;
   } else {
